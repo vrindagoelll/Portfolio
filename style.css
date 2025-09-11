@@ -1,0 +1,30 @@
+body {
+    /* background: linear-gradient(45deg, pink, purple); */
+    background: pink;
+    color: white;
+    font-family: Georgia, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, section {
+    padding: 20x;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+.project-cards {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.project-cards:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18), 0 3px 12px rgba(0, 0, 0, 0.18);
+    background: rgba(255, 152, 0, 0.18);
+}
