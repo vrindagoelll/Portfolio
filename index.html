@@ -3,50 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Vrinda Goel | Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1><span id="greeting"></span> My name is Vrinda. </h1>
-        <P> Welcome to my portfolio! </P>
-        <img src="assets/portfoliopic.jpg" alt="profile picture" width="100" />
-    </header>
-
-    <section id="about">
-        </h2>About Me</h2>
-        <p> I'm a data science blah blah.</p>
-
-    <section id="projects">
-        </h2>Projects</h2>
-        <p> Here are my projects. </p>
-
-        <div class="project-cards">
-            <div class ="project-card">
-                <h3> Sudoku </h3>
-                <p> Project description goes here. </p>
-            </div>
-
-            <div class ="project-card">
-                <h3> Minesweeper </h3>
-                <p> Project description goes here. </p>
-            </div>
-
-            <div class ="project-card">
-                <h3> Minecraft </h3>
-                <p> Project description goes here. </p>
+    <div id="particles-js"></div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">About Me</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Technical Skills</a>
+                <a href="#contact" class="nav-link">Contact Me</a>
             </div>
         </div>
+    </nav>
+
+    <section id="home">
+        <div class="section-container">
+            <div class="profile-container">
+                <img src="assets/PortfolioPic.jpg" alt="Vrinda Goel" class="profile-pic">
+                <h1>Vrinda Goel</h1>
+                <p class="subtitle">Data Science Student at University of Florida</p>
+                <p>Passionate about data analytics, artificial intelligence, and developing efficient software tools that make a difference.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="experience">
-        </h2>Experience</h2>
-        <p> My experience is blah blah blah.</p>
+        <div class="section-container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">October 2025 - Present</div>
+                    <h3>Front Desk Receptionist</h3>
+                    <h4>Department of Health Outcomes and Biomedical Informatics</h4>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Gainesville, FL</p>
+                    <p></p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">May 2025 - July 2025</div>
+                    <h3>Software Engineer Intern</h3>
+                    <h4>ANVIL Systems Group</h4>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Lorton, VA</p>
+                    <p>• Translated a legacy C++ hardware device library into a Python module.</p>
+                    <p>• Wrote a python script to aggregate large datasets.</p>
+                    <p>• Generated graphs to visualize test result data.</p>
+                    <p>• Created a Python module enabling device control via SSH.</p>
+                    <p>• Assisted with production unit assembly.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">May 2024 - August 2024</div>
+                    <h3>Shift Lead</h3>
+                    <h4>SweetFrog Premium Frozen Yogurt</h4>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Glen Mills, PA</p>
+                    <div class="tech-stack">
+                        <span>Customer Service</span>
+                        <span>Leadership</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="section-container">
+            <h2>Certifications</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fas fa-certificate skill-icon"></i>
+                    <h3>Fundamentals of Deep Learning from NVIDIA</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-award skill-icon"></i>
+                    <h3>Artificial Intelligence Fundamentals & Applications</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>🎁 GiftWrapped</h3>
+                        <p>An interactive gift recommendation tool. Uses a Kaggle dataset of 1M+ Amazon products and filters by interests, price, age, and relationship to suggest matching gifts in a scrollable results list.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">SFML</span>
+                            <span class="project-tag">Kaggle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>🤖 Minesweeper</h3>
+                        <p>A classic Minesweeper game featuring grid and mine generation, flag placement, a real-time timer, and game mechanics like tile revealing and state detection.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">SFML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>🗺️ Campus Quest</h3>
+                        <p>An educational trivia game that explores the relationship between college attributes and student success. Includes data scraping, analysis, and visualizations of Greek life GPAs, safety records, and nearby bar counts across Florida campuses.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Data Analysis</span>
+                            <span class="project-tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>🧩 Sudoku</h3>
+                        <p>A functional Sudoku game including random board generation, state checking, difficulty levels, and a responsive interface for interactive gameplay.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">PyGame</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-container">
+            <h2>Technical Skills</h2>
+            
+            <h3 style="text-align: center; margin: 2rem 0 1rem 0; color: var(--primary);">Programming Languages</h3>
+            <div class="programming-languages-grid">
+                <div class="skill-card">
+                    <i class="fab fa-python skill-icon"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>C++</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-r-project skill-icon"></i>
+                    <h3>R</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-calculator skill-icon"></i>
+                    <h3>MATLAB</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <h3>HTML</h3>
+                </div>
+            </div>
+            
+            <h3 style="text-align: center; margin: 3rem 0 1rem 0; color: var(--primary);">Developer Tools</h3>
+            <div class="developer-tools-grid">
+                <div class="tools-row-1">
+                    <div class="skill-card">
+                        <i class="fas fa-laptop-code skill-icon"></i>
+                        <h3>PyCharm</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-server skill-icon"></i>
+                        <h3>Jupyter Notebook</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-cogs skill-icon"></i>
+                        <h3>CLion</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code skill-icon"></i>
+                        <h3>Visual Studio Code</h3>
+                    </div>
+                </div>
+                <div class="tools-row-2">
+                    <div class="skill-card">
+                        <i class="fas fa-chart-line skill-icon"></i>
+                        <h3>RStudio</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-github skill-icon"></i>
+                        <h3>GitHub</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-gitlab skill-icon"></i>
+                        <h3>GitLab</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-container">
+            <h2>Let's Connect!</h2>
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; color: var(--text-secondary);">Always excited to discuss data science, AI, and innovative projects. Feel free to reach out!</p>
+                
+                <div class="contact-info" style="display: grid; gap: 1.5rem; margin: 3rem 0;">
+                    <div class="contact-item" style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                        <i class="fas fa-envelope" style="color: var(--primary); font-size: 1.5rem;"></i>
+                        <span style="font-size: 1.1rem;">vgoel@ufl.edu</span>
+                    </div>
+                    
+                    <div class="contact-item" style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                        <i class="fas fa-phone" style="color: var(--primary); font-size: 1.5rem;"></i>
+                        <span style="font-size: 1.1rem;">+1 (484) 473-5011</span>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/vrindagoelll" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/vrindagoel9" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <h2> Contact me! </h2>
-        <a href="https://www.linkedin.com/in/vrindagoel9" target="_blank">LinkedIn</a>
-        <a href="https://github.com/vrindagoelll" target="_blank">GitHub</a>
+        <div class="section-container">
+            <p style="text-align: center; color: var(--text-secondary);">© 2025 Vrinda Goel. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
