@@ -15,8 +15,8 @@
             <div class="nav-links">
                 <a href="#home" class="nav-link active">About Me</a>
                 <a href="#experience" class="nav-link">Experience</a>
-                <a href="#certificates" class="nav-link">Certificates</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
                 <a href="#skills" class="nav-link">Technical Skills</a>
                 <a href="#contact" class="nav-link">Contact Me</a>
             </div>
@@ -26,10 +26,20 @@
     <section id="home">
         <div class="section-container">
             <div class="profile-container">
-                <img src="assets/PortfolioPic.jpg" alt="Vrinda Goel" class="profile-pic">
-                <h1>Vrinda Goel</h1>
-                <p class="subtitle">Data Science Student at University of Florida</p>
-                <p>Passionate about data analytics, artificial intelligence, and developing efficient software tools that make a difference.</p>
+                <div class="profile-card">
+                    <div class="photo-section">
+                        <img src="assets/PortfolioPic.JPG" alt="Vrinda Goel" class="profile-pic">
+                    </div>
+                    <div class="profile-text">
+                        <p class="greeting-large" id="greeting"></p>
+                        <div class="subtitle-block">
+                        </div>
+                        <p class="bio">My name is Vrinda Goel, and I am a Data Science major at the University of Florida. Go Gators!<br><br>
+                        <p class="bio">I have a strong interest in data analytics, software development, and artificial intelligence. I enjoy using tools such as Python and SQL to solve real-world problems and turn data into meaningful insights.<br><br>
+                        <p class="bio">My experience includes projects in data analysis, AI/ML, and game development, as well as internships in AI/ML Engineering and Software Engineering.<br><br>
+                        <p class="bio">I'm passionate about building solutions, learning new technologies, and applying data-driven thinking to meaningful challenges.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -39,11 +49,22 @@
             <h2>Experience</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">October 2025 - Present</div>
-                    <h3>Front Desk Receptionist</h3>
-                    <h4>Department of Health Outcomes and Biomedical Informatics</h4>
-                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Gainesville, FL</p>
+                    <div class="timeline-date">June 2026 - August 2026</div>
+                    <h3>AI/ML Engineering Intern</h3>
+                    <h4>Cencora</h4>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Conshohocken, PA</p>
                     <p></p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">October 2025 - April 2026</div>
+                    <h3>Front Desk Receptionist</h3>
+                    <h4>University of Florida Department of Health Outcomes and Biomedical Informatics</h4>
+                    <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Gainesville, FL</p>
+                    <p>• Scheduled meeting room reservations upon staff request and maintained an up-to-date calendar</p>
+                    <p>• Sorted and distributed incoming and outgoing mail and packages in a timely manner</p>
+                    <p>• Monitored and replenished office and kitchen supplies to ensure smooth daily operations and maintain a tidy workspace</p>
+                    <p>• Assisted staff and visitors with inquiries, providing courteous and efficient support</p>
                 </div>
 
                 <div class="timeline-item">
@@ -51,11 +72,11 @@
                     <h3>Software Engineer Intern</h3>
                     <h4>ANVIL Systems Group</h4>
                     <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Lorton, VA</p>
-                    <p>• Wrote a python script to aggregate large datasets, reducing data computation time.</p>
-                    <p>• Translated a legacy C++ hardware device library into a Python module.</p>
-                    <p>• Created a Python module enabling communications box device control via SSH.</p>
-                    <p>• Generated graphs to visualize test result data for customer presentations.</p>
-                    <p>• Assisted with production unit assembly and measured cable calibrations.</p>
+                    <p>• Data Aggregation Tool: Wrote a Python script using pandas, NumPy, and openpyxl to aggregate large datasets into an Excel workbook, optimizing data processing from 6 hours to seconds for use in the company's main project</p>
+                    <p>• Python SSH Module: Developed a python module utilizing the Paramiko library to establish a secure SSH connection for remote device control, implementing command-line interface execution and regular expression parsing of standard device output and structured variable input for the CLI</p>
+                    <p>• Codebase Modernization: Translated a legacy C++ hardware device library into a modern, maintainable Python module, supporting codebase modernization and improving integration capabilities</p>
+                    <p>• Data Visualization: Generated graphs using matplotlib to visualize test result data for customer presentations</p>
+                    <p>• Assisted with production unit assembly and measured cable calibrations</p>
                 </div>
 
                 <div class="timeline-item">
@@ -63,12 +84,105 @@
                     <h3>Shift Lead</h3>
                     <h4>SweetFrog Premium Frozen Yogurt</h4>
                     <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Glen Mills, PA</p>
-                    <div class="tech-stack">
-                        <span>Customer Service</span>
-                        <span>Leadership</span>
+                    <p>• Provided excellent customer service while working the register and handling complaints</p>
+                    <p>• Engaged with employees and kept them on task to create a positive work environment</p>
+                    <p>• Maintained organization and cleanliness of the store</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>📍 Spatial Data Analysis</h3>
+                        <p>Conducted exploratory spatial data analysis on Manhattan Airbnb listings; cleaned data, log-transformed prices, and created heatmaps to identify geographic pricing patterns. Built an Ordinary Kriging model to generate continuous prediction surfaces of Airbnb prices across Manhattan using semivariograms and spatial statistics.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Spatial Statistics</span>
+                            <span class="project-tag">Data Visualization</span>
+                        </div>
                     </div>
                 </div>
 
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>🧠 MindCraft</h3>
+                        <p>Full-stack Flask web application built during a 36-hour hackathon integrating real-time computer vision using OpenCV and MediaPipe to track user presence and eye closure. Automatically pauses a Pomodoro timer and triggers audio alerts to re-engage users, with a gamified task manager and interactive frontend.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">OpenCV</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>💧 drAIn</h3>
+                        <p>Full-stack Flask web application developed during a 48-hour hackathon featuring a dynamic water reservoir that visualizes the environmental impact of AI usage. Integrated an AI chatbot via API to simulate water depletion per prompt, with SQL databases for authentication and progress tracking.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">SQLAlchemy</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>🎁 GiftWrapped</h3>
+                        <p>Built an interactive gift recommendation tool using SFML with sprite-based graphics. Implemented custom filtering algorithms to process a Kaggle dataset of 1M+ Amazon products, matching user-selected criteria (interests, price, age, and relationship) with personalized gift suggestions.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">SFML</span>
+                            <span class="project-tag">Kaggle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>🗺️ Campus Quest</h3>
+                        <p>Educational trivia game exploring the relationship between college attributes and student success. Researched and gathered data on Greek life GPAs, safety records, and nearby bar counts for three universities in Florida, then scraped, analyzed, and visualized data to demonstrate correlations.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Web Scraping</span>
+                            <span class="project-tag">Data Analysis</span>
+                            <span class="project-tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>🎮 Minesweeper</h3>
+                        <p>Graphical Minesweeper game developed using SFML featuring grid generation, random mine placement, flag mechanics, and real-time timer. Implemented tile revealing, flagging, and game state detection for full gameplay functionality.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">C++</span>
+                            <span class="project-tag">SFML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>🧩 Sudoku</h3>
+                        <p>Developed a responsive Sudoku game using PyGame with object-oriented programming concepts. Implemented random board generation, state checking, and difficulty levels to create an engaging, interactive gameplay experience.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">PyGame</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -89,59 +203,6 @@
         </div>
     </section>
 
-    <section id="projects">
-        <div class="section-container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>🎁 GiftWrapped</h3>
-                        <p>An interactive gift recommendation tool. Uses a Kaggle dataset of 1M+ Amazon products and filters by interests, price, age, and relationship to suggest matching gifts in a scrollable results list.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">C++</span>
-                            <span class="project-tag">SFML</span>
-                            <span class="project-tag">Kaggle</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>🤖 Minesweeper</h3>
-                        <p>A classic Minesweeper game featuring grid and mine generation, flag placement, a real-time timer, and game mechanics like tile revealing and state detection.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">C++</span>
-                            <span class="project-tag">SFML</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>🗺️ Campus Quest</h3>
-                        <p>An educational trivia game that explores the relationship between college attributes and student success. Includes data scraping, analysis, and visualizations of Greek life GPAs, safety records, and nearby bar counts across Florida campuses.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">Data Analysis</span>
-                            <span class="project-tag">Data Visualization</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>🧩 Sudoku</h3>
-                        <p>A functional Sudoku game including random board generation, state checking, difficulty levels, and a responsive interface for interactive gameplay.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Python</span>
-                            <span class="project-tag">PyGame</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="skills">
         <div class="section-container">
             <h2>Technical Skills</h2>
@@ -153,20 +214,20 @@
                     <h3>Python</h3>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-code skill-icon"></i>
-                    <h3>C++</h3>
-                </div>
-                <div class="skill-card">
                     <i class="fab fa-r-project skill-icon"></i>
                     <h3>R</h3>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-calculator skill-icon"></i>
-                    <h3>MATLAB</h3>
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3>SQL</h3>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-html5 skill-icon"></i>
-                    <h3>HTML</h3>
+                    <i class="fas fa-code skill-icon"></i>
+                    <h3>C++</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-calculator skill-icon"></i>
+                    <h3>MATLAB</h3>
                 </div>
             </div>
             
@@ -174,26 +235,30 @@
             <div class="developer-tools-grid">
                 <div class="tools-row-1">
                     <div class="skill-card">
-                        <i class="fas fa-laptop-code skill-icon"></i>
-                        <h3>PyCharm</h3>
+                        <i class="fas fa-code skill-icon"></i>
+                        <h3>Visual Studio Code</h3>
                     </div>
                     <div class="skill-card">
                         <i class="fas fa-server skill-icon"></i>
                         <h3>Jupyter Notebook</h3>
                     </div>
                     <div class="skill-card">
-                        <i class="fas fa-cogs skill-icon"></i>
-                        <h3>CLion</h3>
+                        <i class="fas fa-laptop-code skill-icon"></i>
+                        <h3>PyCharm</h3>
                     </div>
                     <div class="skill-card">
-                        <i class="fas fa-code skill-icon"></i>
-                        <h3>Visual Studio Code</h3>
+                        <i class="fas fa-chart-line skill-icon"></i>
+                        <h3>RStudio</h3>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-cogs skill-icon"></i>
+                        <h3>CLion</h3>
                     </div>
                 </div>
                 <div class="tools-row-2">
                     <div class="skill-card">
-                        <i class="fas fa-chart-line skill-icon"></i>
-                        <h3>RStudio</h3>
+                        <i class="fas fa-code-branch skill-icon"></i>
+                        <h3>Git</h3>
                     </div>
                     <div class="skill-card">
                         <i class="fab fa-github skill-icon"></i>
@@ -203,6 +268,46 @@
                         <i class="fab fa-gitlab skill-icon"></i>
                         <h3>GitLab</h3>
                     </div>
+                    <div class="skill-card">
+                        <i class="fab fa-linux skill-icon"></i>
+                        <h3>Linux</h3>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin: 3rem 0 1rem 0; color: var(--primary);">Libraries & Frameworks</h3>
+            <div class="libraries-grid">
+                <div class="skill-card">
+                    <i class="fas fa-cube skill-icon"></i>
+                    <h3>pandas</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cube skill-icon"></i>
+                    <h3>NumPy</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chart-bar skill-icon"></i>
+                    <h3>matplotlib</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-brain skill-icon"></i>
+                    <h3>PyTorch</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-gamepad skill-icon"></i>
+                    <h3>PyGame</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-file-excel skill-icon"></i>
+                    <h3>OpenPyXL</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-shapes skill-icon"></i>
+                    <h3>SFML</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-flask skill-icon"></i>
+                    <h3>Flask</h3>
                 </div>
             </div>
         </div>

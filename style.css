@@ -138,7 +138,7 @@ body {
 
 /* Sections */
 section {
-    padding: 6rem 2rem;
+    padding: 8rem 2rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -159,9 +159,43 @@ section {
     padding-top: 8rem;
 }
 
-.profile-container {
-    margin-bottom: 4rem;
+.greeting-large {
+    font-size: 3rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.about-me-label {
+    font-size: 1.3rem;
+    color: var(--text);
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
     animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.profile-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+    max-width: 1200px;
+    text-align: left;
+}
+
+.profile-text {
+    max-width: 400px;
+    margin-top: 3rem;
 }
 
 @keyframes fadeInUp {
@@ -176,20 +210,15 @@ section {
 }
 
 .profile-pic {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    width: 350px;
+    height: 450px;
+    border-radius: 15px;
     object-fit: cover;
-    border: 4px solid var(--primary);
+    border: 3px solid var(--primary);
     box-shadow: 0 0 30px var(--shadow), 0 0 60px rgba(255, 20, 147, 0.2);
-    margin-bottom: 2rem;
+    margin-bottom: 0;
+    margin-top: 4rem;
     transition: all 0.3s ease;
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
 }
 
 .profile-pic:hover {
@@ -197,30 +226,29 @@ section {
     box-shadow: 0 0 40px var(--shadow), 0 0 80px rgba(255, 20, 147, 0.3);
 }
 
-.subtitle {
-    font-size: 1.3rem;
-    color: var(--secondary);
-    margin: 1rem 0;
-    font-weight: 300;
-}
-
-#home h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    background: linear-gradient(45deg, var(--primary), var(--accent), var(--secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.greeting {
+    font-size: 0.95rem;
+    color: var(--primary);
     margin-bottom: 1rem;
-    animation: fadeInUp 1s ease-out 0.5s both;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    animation: fadeInUp 1s ease-out 0.3s both;
 }
 
-#home p {
-    font-size: 1.1rem;
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.institution {
+    font-size: 0.95rem;
     color: var(--text-secondary);
-    max-width: 600px;
-    margin: 0 auto;
-    animation: fadeInUp 1s ease-out 0.7s both;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.3px;
 }
 
 /* Skills Section */
@@ -271,6 +299,14 @@ section {
     margin-top: 2rem;
 }
 
+/* Libraries & Frameworks Layout - 4 cards in one row */
+.libraries-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
 /* Developer Tools Layout - 4 in first row, 3 in second row */
 .developer-tools-grid {
     margin-top: 2rem;
@@ -284,20 +320,21 @@ section {
 }
 
 .tools-row-1 {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .tools-row-2 {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 75%;
-    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skill-card {
     background: var(--glass);
     backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border);
-    padding: 2.5rem;
+    padding: 2rem 2.5rem 2.5rem 2.5rem;
     border-radius: 25px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
